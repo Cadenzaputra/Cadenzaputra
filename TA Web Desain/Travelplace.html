@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Travelplace</title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="logo travelplace.png"></a>
+		<ul>
+			<li>
+				<div id="marker"></div>
+				<a href="#">Home</a>
+				<a href="#">About Us</a>
+				<a href="#">Our Services</a>
+				<a href="#">Tour Packages</a>
+				<a href="#">Custom Tour</a>
+			</li>
+		</ul>
+	</header>
+	<section class="slider">
+		<div class="load"></div>
+		<div class="content" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1300">
+			<div class="title">
+				<h5>Customize your trip with Travelplace</h5>
+				<p>Let’s traveling with Travelplace and make a memorable journey</p>
+			</div>
+			<div class="btn1">Create Your Tour</div>
+		</div>
+	</section>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script type="text/javascript">
+		AOS.init();
+		var marker = document.querySelector('#marker');
+		var item = document.querySelectorAll('ul li a');
+
+		function indicator(e) {
+			marker.style.left = e.offsetLeft + "px";
+			marker.style.width = e.offsetWidth + "px";
+		}
+
+		item.forEach(link => {
+			link.addEventListener('click', (e)=>{
+				indicator(e.target);
+			})
+		})
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky", window.scrollY > 0);
+		})
+	</script>
+	
+</body>
+</html>
