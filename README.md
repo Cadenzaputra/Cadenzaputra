@@ -1,4 +1,4 @@
-### I'm Cadenza, Nice to meet you. I'm a student in SMKN4 Malang, I like UI/UX and little programming.
+Hi, I'm Cadenza, Nice to meet you. I'm a student in SMKN4 Malang, I like UI/UX and little programming.
 
 <!--
 **Cadenzaputra/Cadenzaputra** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
