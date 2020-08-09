@@ -1,3 +1,7 @@
-- Sudah membuat desain web dengan gambar.
-- Sudah membuat desain web dengan adobe XD.
-- Sudah membuat home page/landing page.
+- Analisa kebutuhan untuk sebuah web travel/tour packages
+- Mensketch awal web (desain gambar kertas)
+- Mendesain web di software
+- Prototyping di software adobe xd
+- Pengcodingan
+- Testing web
+- Publish web
