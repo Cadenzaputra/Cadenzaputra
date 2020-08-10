@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Travelplace</title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="logo travelplace.png"></a>
+		<ul>
+			<li>
+				<div id="marker"></div>
+				<a href="#">Home</a>
+				<a href="#">About Us</a>
+				<a href="#">Our Services</a>
+				<a href="#">Tour Packages</a>
+				<a href="#">Custom Tour</a>
+			</li>
+		</ul>
+	</header>
+	<section class="slider">
+		<div class="load"></div>
+		<div class="content">
+			<div class="title">
+				<h5>Customize your trip with Travelplace</h5>
+				<p>Let’s traveling with Travelplace and make a memorable journey</p>
+			</div>
+			<a href="#"><div class="btn1">Create Your Tour</div></a>
+		</div>
+	</section>
+	<section class="wrapper-kelebihan">
+		<div class="content1"><img src="Dollar.png"></div>
+		<p class="text-content1">Jaminan Harga Terbaik<br></p>
+		<p class="main-text-content1">Harga yang sangat terjangkau.</p>
+		<div class="content2"><img src="User.png"></div>
+		<p class="text-content2">Professional<br></p>
+		<p class="main-text-content2">Pelayanan yang aman <br>dan nyaman.</p>
+		<div class="content3"><img src="Pesawat.png"></div>
+		<p class="text-content3">Pesan Kilat<br></p>
+		<p class="main-text-content3">Pelayanan yang cepat dan tepat.</p>
+	</section>
+	<section>
+		<div class="service-title">
+			Service We Provide<br>
+			<p>Tenaga kerja kami siap melayani anda dengan nyaman, aman, dan menyenangkan</p>
+		</div>
+		<div class="wrapper-service">
+			
+			<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1300" data-aos-delay="300">
+				<div class="card">
+					<div class="imgBx">
+						<img src="img5.jpg">
+						<div class="info">
+							<h1>CS 24/7</h1>
+							<p>Customer service kami<br>siap melayani anda 24 jam.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1300" data-aos-delay="600">
+				<div class="card">
+					<div class="imgBx">
+						<img src="img6.jpg">
+						<div class="info">
+							<h1>Flexible</h1>
+							<p>Dipandu oleh pemandu tour<br>yang menyenangkan.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1300" data-aos-delay="800">
+				<div class="card">
+					<div class="imgBx">
+						<img src="img7.jpg">
+						<div class="info">
+							<h1>Leisure Travel</h1>
+							<p>Menyediakan perjalanan<br>destinasi yang lengkap.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="wrapper-tour-packages">
+		<div class="card-tour1">
+			
+		</div>
+	</div>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script type="text/javascript">
+		AOS.init();
+		var marker = document.querySelector('#marker');
+		var item = document.querySelectorAll('ul li a');
+
+		function indicator(e) {
+			marker.style.left = e.offsetLeft + "px";
+			marker.style.width = e.offsetWidth + "px";
+		}
+
+		item.forEach(link => {
+			link.addEventListener('click', (e)=>{
+				indicator(e.target);
+			})
+		})
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky", window.scrollY > 0);
+		})
+	</script>
+	
+</body>
+</html>
